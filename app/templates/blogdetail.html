@@ -1,0 +1,344 @@
+{% extends "basic.html" %}
+{% load static %}
+{% block title %} Blog Details {% endblock title %}
+
+{% block body %}
+<main class="main"></main>
+<div class="container section-title" data-aos="fade-up">
+  <h2 class="h2-color">Blog Details</h2>
+  <p style="font-size: 10;"  >
+    Ever wondered how great digital ideas become powerful, scalable web platforms? 
+    Dive into my latest post <strong>Concept to Code: The Art of Building Scalable Web Platforms.</strong> Walking 
+    you through the process and expertise in building solutions.
+  </p>
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+            
+          </div>
+        </div>
+     
+    </div><!-- End Page Title -->
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-8">
+
+          <!-- Blog Details Section -->
+          <section id="blog-details" class="blog-details section">
+            <div class="container">
+
+              <article class="article">
+
+                <div class="post-img">
+                  <img src="{% static 'assets/img/blog/blog.jpg' %}" alt="" class="img-fluid">
+                </div>
+                <h3><b>From Concept to Code: The Art of Building Scalable Web Platforms</b></h3>
+                <div class="meta-top">
+                  <ul>
+                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="">Kenny Akanbi</a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href=""><time datetime="2020-01-01">April 17, 2025</time></a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="">Comments</a></li>
+                  </ul>
+                </div><!-- End meta top -->
+
+                <div class="content">
+                  <p>
+                    In today’s fast-moving digital landscape, every startup, brand, or creator wants more than just a website — they want a platform that grows with them. At the intersection of creativity and code, 
+                    we transform raw ideas into dynamic online solutions. Here’s how we do it.
+                  </p>
+                  <h3>💡 1. Discovery: Understanding Your Vision</h3>
+                  <p>
+                    Every project starts with a deep dive. We ask the right questions:
+                    <li>What problem are you solving?
+                    <li>Who are your users?
+                    <li>What’s your growth ambition?
+                    </p>
+                  </ul> 
+                  From there, we create a solution roadmap tailored to your goals.
+                  <blockquote>
+                    <p>
+                      Scalable platforms aren’t born—they’re crafted, step by step, from bold ideas into seamless digital experiences that grow with you.
+                    </p>
+                  </blockquote>
+                   
+                  <h3>🔨 2. Design: UX/UI That Works and Wows</h3>
+                  <p>
+                    Next, our design team gets to work. We build wireframes and prototypes that reflect:
+                    <li>Clean navigation
+                    <li>Visual hierarchy
+                    <li>Brand personality
+                    </p>
+                      This phase is about creating a user journey that feels intuitive and memorable 
+                    </ul> 
+                  
+                       
+                  <h3>🚀 3. Development: Bringing Ideas to Life</h3>
+                  <p>
+                    This is where code meets creativity. Our dev team builds your platform using:
+                  </p>
+                    <li>Scalable frameworks like Django, React, or Next.js
+                    <li>Clean architecture principles
+                    <li>Version control and CI/CD pipelines for efficient collaboration
+                    </p>
+                    We believe in writing maintainable, modular code so your platform is built to evolve.
+                  </p>
+                    </ul> 
+                  <br>
+                  <img src="{% static 'assets/img/blog/blog-inside.jpg' %}" class="img-fluid" alt="">
+
+                  <h3>📊 4. Testing and Optimization: Quality Comes First</h3>
+                    <li>Performance tuning for speed
+                    <li>Security audits
+                    <li>Cross-device compatibility
+                    <p>
+                    We also use analytics tools to collect user insights and iterate fast.
+                    </p>
+                    </ul> 
+
+                    <h3>🌟 5. Launch & Beyond: Scale with Confidence</h3>
+                    <p>Deployment isn’t the end—it’s the beginning. We host your platform on robust cloud infrastructure
+                       (AWS, Render, or Vercel), and provide:
+                      <li>Ongoing support
+                      <li>Feature updates
+                      <li>Growth-focused performance monitoring
+                      </p>
+                      </ul> 
+
+                      <h3>🚀 Ready to build something scalable?</h3>
+                      <p>If you’ve got the spark, we’ve got the strategy and skills to turn it into something amazing.</p>
+                       <p>Let’s build your next big thing—from concept to code.</p>
+                    </div><!-- End post content -->
+
+                <div class="meta-bottom">
+                  <i class="bi bi-folder"></i>
+                  <ul class="cats">
+                    <li><a href="#">Business</a></li>
+                  </ul>
+
+                  <i class="bi bi-tags"></i>
+                  <ul class="tags">
+                    <li><a href="#">Creative</a></li>
+                    <li><a href="#">Tips</a></li>
+                    <li><a href="#">Marketing</a></li>
+                  </ul>
+                </div><!-- End meta bottom -->
+
+              </article>
+
+            </div>
+          </section><!-- /Blog Details Section -->
+
+          <!-- Blog Author Section -->
+         
+          <!-- Blog Comments Section -->
+          <section id="blog-comments" class="blog-comments section">
+
+            <div class="container">
+
+              <h4 class="comments-count">Comments</h4>
+
+               <!-- Comment Form Section -->
+          <section id="comment-form" class="comment-form section">
+            <div class="container">
+
+              <form action="">
+
+                <h4>Post Comment</h4>
+                <p>Your email address will not be published. Required fields are marked * </p>
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input name="name" type="text" class="form-control" placeholder="Your Name*">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input name="email" type="text" class="form-control" placeholder="Your Email*">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col form-group">
+                    <input name="website" type="text" class="form-control" placeholder="Your Website">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col form-group">
+                    <textarea name="comment" class="form-control" placeholder="Your Comment*"></textarea>
+                  </div>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Post Comment</button>
+                </div>
+              </form>
+            </div>
+          </section><!-- /Comment Form Section -->
+
+              <div id="comment-1" class="comment">
+                <div class="d-flex">
+                </div>
+              </div><!-- End comment #1 -->
+              <div id="comment-2" class="comment">
+                <div class="d-flex">
+                <div>
+                   
+                  </div>
+                </div>
+
+                <div id="comment-reply-1" class="comment comment-reply">
+                  <div class="d-flex">
+                    
+                    <div>
+                                         </div>
+                  </div>
+
+                  <div id="comment-reply-2" class="comment comment-reply">
+                    <div class="d-flex">
+                    
+                      <div>
+                      
+                      </div>
+                    </div>
+
+                  </div><!-- End comment reply #2-->
+
+                </div><!-- End comment reply #1-->
+
+              </div><!-- End comment #2-->
+
+              <div id="comment-3" class="comment">
+                <div class="d-flex">
+                 
+                  <div>
+                   
+                  </div>
+                </div>
+
+              </div><!-- End comment #3 -->
+
+              <div id="comment-4" class="comment">
+                <div class="d-flex">
+                                 <div>
+                    
+                  </div>
+                </div>
+
+              </div><!-- End comment #4 -->
+
+            </div>
+
+          </section><!-- /Blog Comments Section -->
+
+         
+
+        </div>
+
+        <div class="col-lg-4 sidebar">
+
+          <div class="widgets-container">
+
+            <!-- Search Widget -->
+            <div class="search-widget widget-item">
+
+              <h3 class="widget-title">Search</h3>
+              <form action="">
+                <input type="text">
+                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+              </form>
+
+            </div><!--/Search Widget -->
+
+            <!-- Categories Widget -->
+            <div class="categories-widget widget-item">
+
+              <h3 class="widget-title">Categories</h3>
+              <ul class="mt-3">
+                <li><a href="#">General <span>(25)</span></a></li>
+                <li><a href="#">Lifestyle <span>(12)</span></a></li>
+                <li><a href="#">Travel <span>(5)</span></a></li>
+                <li><a href="#">Design <span>(22)</span></a></li>
+                <li><a href="#">Creative <span>(8)</span></a></li>
+                <li><a href="#">Educaion <span>(14)</span></a></li>
+              </ul>
+
+            </div><!--/Categories Widget -->
+
+            <!-- Recent Posts Widget -->
+            <div class="recent-posts-widget widget-item">
+
+              <h3 class="widget-title">Recent Posts</h3>
+
+              <div class="post-item">
+                <img src="{% static 'assets/img/blog/blog-recent-1.jpg' %}" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="blog-details.html">Ever wondered how brands create content that sticks in your head?</a></h4>
+                  <time datetime="2020-01-01">Jan 1, 2025</time>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="{% static 'assets/img/blog/blog-recent-2.jpg' %}" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="blog-details.html">The Science of High-Impact Media Campaigns</a></h4>
+                  <time datetime="2020-01-01">Feb 24, 2025</time>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="{% static 'assets/img/blog/blog-recent-3.jpg' %}" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="blog-details.html">Turning Real-World Feedback into Product Gold</a></h4>
+                  <time datetime="2020-01-01">Jan March, 2025</time>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="{% static 'assets/img/blog/blog-recent-4.jpg' %}" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="blog-details.html">Why UX Is Not Just for Apps—It’s for Every Brand Touchpoint</a></h4>
+                  <time datetime="2020-01-01">March 1, 2025</time>
+                </div>
+              </div><!-- End recent post item-->
+
+              <div class="post-item">
+                <img src="{% static 'assets/img/blog/blog-recent-5.jpg' %}" alt="" class="flex-shrink-0">
+                <div>
+                  <h4><a href="blog-details.html">Visual Storytelling in the Age of AR and AI-Generated Content</a></h4>
+                  <time datetime="2020-01-01">April 13, 2025</time>
+                </div>
+              </div><!-- End recent post item-->
+
+            </div><!--/Recent Posts Widget -->
+
+            <!-- Tags Widget -->
+            <div class="tags-widget widget-item">
+
+              <h3 class="widget-title">Tags</h3>
+              <ul>
+                <li><a href="#">App</a></li>
+                <li><a href="#">IT</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Office</a></li>
+                <li><a href="#">Creative</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Smart</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Marketing</a></li>
+              </ul>
+
+            </div><!--/Tags Widget -->
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+{% endblock body %}

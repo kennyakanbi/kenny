@@ -1,0 +1,364 @@
+{% extends "basic.html" %}
+{% load static %}
+
+{% block title %}kennyprocoding{% endblock title %}
+{% block hero %}
+<main> 
+   <body class="index-page">
+  <main class="main" style="margin-left: 10px;">
+    <section id="hero" class="hero section dark-background">
+      <img src="{% static 'assets/img/hero.png' %}" alt="" data-aos="fade-in" class="hero-img">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2 style="text-align: left;">KENNY PRO CODING</h2>
+        <p style="text-align: left;">
+          We provide 
+          <span class="typed" data-typed-items="Media Advertising Campaigns, Web and Mobile App Development, Live Streaming and Video Production">
+            Media Advertiser
+          </span>
+          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+        </p>
+
+        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="sign-up-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+      </div>
+    </div>
+      </div>
+     
+    </section>
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-01.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-02.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/clients-03.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-04.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-05.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-07.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-06.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-0.png' %}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'assets/img/clients/client-08.jpg' %}" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+  <!-- Services Section -->
+  <section id="services" class="services section">
+<section>
+ <div class="container section-title" data-aos="fade-up">
+  <h2 class="h2-color">Innovative Solutions For Brand</h2>
+  <p>Empowering businesses to thrive in the digital landscape through a unique blend of media advertising, software development, and live stream/video productions.
+    Our mission is to deliver impactful, result driven solutions that elevate branf and drive growth.
+  </p>
+</div><!-- End Section Title -->
+
+<div class="container">
+
+  <div class="row gy-4">
+
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="service-item position-relative">
+        <div class="icon">
+          <i class="bi bi-activity"></i>
+        </div>
+        <a href="" class="stretched-link">
+          <h3>Media Solutions</h3>
+        </a>
+          <ul style="text-align: justify;" >
+          <li><b>Digital Advertising</b><br>Google Ads, Facebook Ads, and other platforms</li>
+          <li><b>Socia Media Management</b><br>Contente creation, curation, and strategy. </li>
+          <li><b>Influencer Marketing</b><br>Partrnering with inflencers to amplify your brand.</li>
+          <li><b>Media Planning</b><br>Understanding target audience abd budget allocation</li>
+        </ul>
+      </div>
+    </div><!-- End Service Item -->
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+      <div class="service-item position-relative">
+        <div class="icon">
+          <i class="bi bi-broadcast"></i>
+        </div>
+        <a href="" class="stretched-link">
+          <h3>Software Development</h3>
+        </a>
+          <ul style="text-align: left;" >
+          <li><b>Custom Software Solutions</b><br>Tailor software development for businesses.</li>
+          <li><b>Web Development</b><br>Building responsive, user friendly websites. </li>
+          <li><b>Mobile App Development</b><br>Creating engaging mobile experience. </li>
+          <li><b>Software Consulting</b><br>Expert advice on software strategy and implementation.</li>
+        </ul>
+      </div>
+    </div><!-- End Service Item -->
+
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="service-item position-relative">
+        <div class="icon">
+          <i class="bi bi-easel"></i>
+        </div>
+        <h3>Visual Contents</h3>
+      </a>
+        <ul style="text-align: justify;" >
+        <li><b>Custom Software Solutions:</b><br>Engaging live content for events, conferences, and product lunches.</li>
+        <li><b>Video Production</b><br>High-quality video content for marketing, training and more.</li>
+        <li><b>Virtual Event Production</b><br>Creating immersive virtual event experiences.</li>
+        <li><b>Video Strategy</b><br>Developinf a video content strategy that drives results.</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+    </div><!-- End Service Item -->
+  </section>
+ <!-- Stats Section -->
+ <section id="stats" class="stats section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-emoji-smile"></i>
+          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Happy Clients</strong> <span>Annual expected clients</span></p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-journal-richtext"></i>
+          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Projects</strong> <span>Annual expected projects</span></p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-headset"></i>
+          <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Hours Of Support</strong> <span>24/7 online services</span></p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item">
+          <i class="bi bi-people"></i>
+          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+          <p><strong>Hard Workers</strong> <span>Staff number expected growth</span></p>
+        </div>
+      </div><!-- End Stats Item -->
+    </div>
+  </div>
+
+ <section id="portfolio" class="portfolio section light-background">
+  <section class="intro-section">
+    <div class="container">
+      <div class="intro-content">    
+        <h1>Welcome to My  <span class="highlight">Creative Space</span></h1>
+      </div>
+      <p>I help brands and businesses stand out through <strong>bold ideas, innovative software, and visually powerful storytelling.</strong> Whether you need to launch a captivating <b>ad campaign, build a custom web application, or create immersive live/video content,</b> I’ve got the tools and talent to bring your vision to life.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-app">App</li>
+        <li data-filter=".filter-product">Product</li>
+        <li data-filter=".filter-branding">Branding</li>
+        <li data-filter=".filter-books">Books</li>
+      </ul><!-- End Portfolio Filters -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/img/portfolio/app-1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Mobile App Development</h4>
+              <p>Your Mobile App will market your business.</p>
+              <a href="{% static 'assets/img/portfolio/product-1.jpg' %}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>      
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/img/portfolio/product-1.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web Development</h4>
+              <p>Skills in core areas of web development that you need</p>
+              <a href="{% static 'assets/img/portfolio/product-1.jpg' %}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/img/portfolio/tech.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Software Development</h4>
+              <p>We develop software tailor to your brand need..</p>
+              <a href="{% static 'assets/img/portfolio/branding-1.jpg' %}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="portfolio-content h-100">
+              <img src="{% static 'assets/img/portfolio/app5.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Marketing strategy</h4>
+                <p>customize marketing data for effective business.</p>
+                <a href="{% static 'assets/img/portfolio/app5.png' %}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <div class="portfolio-content h-100">
+              <img src="{% static 'assets/img/portfolio/media.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Adverising</h4>
+                <p>Help you create a remarkable presence online and offline. </p>
+                <a href="{% static 'assets/img/portfolio/books-3.png' %}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/img/portfolio/books-1.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Digital Video</h4>
+              <p>We make Digital Video that increase your visibility on all media platforms.</p>
+              <a href="{% static 'assets/img/portfolio/books-2.png' %}" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
+</div>
+</div> </div><!-- End Portfolio Item -->
+</section>
+   <!-- Skills Section -->
+   <section id="skills" class="skills section light-background">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2 class="h2-color">Collaborating with industry leaders to deliver exceptional result </h2>
+      <p>I believe in power of collaboration as partnering are essential to my success, and i am greatful for their expertise, creativity and dedication. Together, we are pushing boundaries and achieving great things.</p>
+    </div><!-- End Section Title -->
+  
+    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+  
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+        <div class="portfolio-content h-100">
+          <img src="{% static 'assets/img/portfolio/staff-1.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+  
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+        <div class="portfolio-content h-100">
+          <img src="{% static 'assets/img/portfolio/staff-02.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+          </div>
+        </div>
+      </div><!-- End Portfolio Item -->
+  
+      <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+        <div class="portfolio-content h-100">
+          <img src="{% static 'assets/img/portfolio/staff-03.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+          </div>
+  
+  </section><!-- /Stats Section -->
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="{% static 'assets/img/cta-bg.jpg' %}" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Let’s Bring Your Vision to Life!</h3>
+              <p>From dynamic media advertising campaigns to powerful software solutions and high-quality live video productions, I offer tailored services designed to fit your budget and help your brand stand out in a digital-first world.</p>
+              <a class="cta-btn" href="/contact">Let get together!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+{% endblock hero %}
+
+{% block body %} 
+
+{% for message in messages %}
+
+<div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+    <strong>{{message}}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+
+{% endblock body %}
+</main> 

@@ -1,0 +1,43 @@
+{% extends "basic.html" %}
+{% load static %}
+{% block title %} Blog {% endblock title %}
+
+{% block body %}
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2 class="h2-color">Welcome to my Blog</h2>
+      <p>Stay informed and up-to-date with expert-led blog, featuring in-depth analysis and 
+        commentary on the latest developments in media and techindustry. Our team of experts shares
+         their knowledge and insights to help you make informed decisions.
+     </p>
+    </div><!-- End Section Title -->
+
+    <!-- Blog Posts Section -->
+<section class="container">
+  <div class="row gy-4">
+    {% for post in posts reversed %}
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon flex-shrink-0">
+          <i class="bi bi-card-checklist"></i>
+        </div>
+        <div>
+          <img src="{{ post.img.url }}" class="img-fluid mb-3" alt="no-image" />
+          <div class="icon flex-shrink-0">
+            <i class="bi bi-briefcase"></i>
+          </div>
+          <h4 class="title">
+            <a href="/blogdetail" class="stretched-link">{{ post.title }}</a>
+          </h4>
+          <p class="description">{{ post.description }}</p>
+          <h6>Posted By: <b>{{ post.authname }}</b></h6>
+          <p>Posted on: <b>{{ post.timeStamp }}</b></p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock body %}
+
+    
